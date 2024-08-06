@@ -7,10 +7,6 @@
 # Boot manager
 TARGET_BOOT_MANAGER := rEFInd
 
-# Kernel
-BOARD_KERNEL_CMDLINE_CONSOLE := \
-    console=ttyAMA0
-
 # Inherit from common
 include device/virt/virtio-common/BoardConfigCommon.mk
 
@@ -31,6 +27,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 
 # Kernel
+BOARD_KERNEL_CMDLINE += \
+    console=ttyAMA0
+
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ARCH := arm64
 
