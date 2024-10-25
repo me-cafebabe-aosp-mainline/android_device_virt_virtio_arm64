@@ -24,9 +24,3 @@ PRODUCT_MODEL := VirtIO arm64
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=$(PRODUCT_MANUFACTURER) \
     ro.soc.model=$(PRODUCT_DEVICE)
-
-# Workaround build fingerprint too long
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="virtio_arm64-eng 14 AP2A.240705.005 0 test-keys"
-
-BUILD_FINGERPRINT := virtio/virtio_arm64/virtio_arm64:14/AP2A.240705.005/0:eng/test-keys
