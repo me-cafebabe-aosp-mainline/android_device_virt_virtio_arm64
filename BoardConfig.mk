@@ -11,7 +11,6 @@ TARGET_BOOT_MANAGER ?= grub
 include device/virt/virtio-common/BoardConfigCommon.mk
 
 USES_DEVICE_VIRT_VIRTIO_ARM64 := true
-DEVICE_PATH := device/virt/virtio_arm64
 
 # Arch
 TARGET_ARCH := arm64
