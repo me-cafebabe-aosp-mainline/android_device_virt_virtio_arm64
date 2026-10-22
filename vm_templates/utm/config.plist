@@ -138,7 +138,7 @@
 	<key>Sharing</key>
 	<dict>
 		<key>ClipboardSharing</key>
-		<false/>
+		<true/>
 		<key>DirectoryShareMode</key>
 		<string>VirtFS</string>
 		<key>DirectoryShareReadOnly</key>
